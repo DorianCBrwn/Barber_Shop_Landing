@@ -14,9 +14,7 @@
   });
 </script>
 
-<section
-  class="px-8 bg-[url('../../static/images/pexels-thgusstavo-santana-2817022.jpg')]"
->
+<section class="h-screen">
   <Navbar />
   <slot />
 </section>

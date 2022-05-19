@@ -1,36 +1,35 @@
 <script>
-  import bg_img from "$lib/assets/images/pexels-luis-quintero-1453005.jpg";
+  import bg from "$lib/assets/images/bg-medium.jpg";
   import small_img from "$lib/assets/images/pexels-rodnae-productions-7697316.jpg";
   import medium_img from "$lib/assets/images/pexels-thgusstavo-santana-2817022.jpg";
 </script>
 
 <section
-  class="relative py-32 h-1/5 border-purple-600 border-2"
-  style="background-image: url('${bg_img}')"
+  class=" h-full flex flex-col border-purple-600 border-2  bg-cover bg-right bg-no-repeat mt-8"
+  style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{bg}')"
 >
-  <!-- <img
-    src={bg_img}
-    alt=""
-    class="absolute -top-28 right-4  w-fit z-0 contrast-50  "
-  /> -->
-
-  <div class="flex max-w-6xl-mx-auto">
-    <div class="flex flex-col w-1/2">
-      <h1 class="text-5xl font-semibold mt-12 leading-relaxed ">
+  <div class="h-5/6 border-orange-400 border-2 flex flex-col md:max-w-6xl">
+    <div
+      class="h-full flex flex-col items-center justify-around mt-6 border-2 "
+    >
+      <h1
+        class="px-2 font-bold text-xl text-center leading-normal lg:text-5xl lg:leading-relaxed "
+      >
         We will give you an Impeccable Look
       </h1>
-      <h2 class="text-m mt-6 leading-relaxed">
+      <h2
+        class=" px-2 text-m text-base font-medium text-center leading-normal "
+      >
         You will leave looking sharp, relaxed and ready to take on the world,
         with that swagger in your stride.
       </h2>
-      <a href="/" class="mt-10">
-        <button
-          class="btn btn-primary btn-xs sm:btn-xs md:btn-sm lg:btn-md my-8 py-4"
-          >Book Appointment</button
+      <a href="/" class="">
+        <button class="btn btn-secondary btn-sm md:btn-md lg:btn-lg py-2">
+          Book Now</button
         >
       </a>
     </div>
-    <div class="w-1/2 border-4 flex items-center">
+    <div class="hidden w-1/2 border-4 flex items-center">
       <img
         src={small_img}
         alt=""

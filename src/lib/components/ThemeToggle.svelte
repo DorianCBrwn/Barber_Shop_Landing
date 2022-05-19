@@ -1,4 +1,5 @@
-<script></script>
+<script>
+</script>
 
 <input
   data-toggle-theme="bumblebee,mytheme"
