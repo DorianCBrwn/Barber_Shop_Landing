@@ -1,5 +1,6 @@
 <script>
   import Icon from "./Icon.svelte";
+  import ThemeToggle from "./ThemeToggle.svelte";
   const Navlinks = [
     {
       name: "Home",
@@ -20,8 +21,8 @@
   ];
 </script>
 
-<header class="max-w-7xl mx-auto py-8">
-  <div class="flex items-start space-x-32 justify-around">
+<header class="max-w-7xl mx-auto py-8 px-8 relative top-0 w-full">
+  <div class="flex items-start justify-around px-10">
     <div class="text-yellow-600">
       <Icon
         name="barberName"
@@ -42,24 +43,6 @@
         {/each}
       </div>
     </nav>
-    <Icon
-      name="arrow"
-      direction="n"
-      width="4rem"
-      viewheight="90"
-      viewwidth="90"
-    />
+    <ThemeToggle />
   </div>
 </header>
-<!--
-<nav class="max-w-7xl mx-auto py-8">
-‹div class="fLex items-center space-x-32">
-N
-‹div class="flex space-x-1 items-center">
-<img src="/images/logo.png" alt="Logo" width={38} height={38} D
-<h1 class="text-2xl font-bold">waterworks</h1>
-< div>
-‹div class="flex space-x-16">
-{#each navLinks as navLink}
-a href="/" class="font-medium [hover: text-gray-600 transition duration{navLink}</a>
--->
